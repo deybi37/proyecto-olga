@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+#div img{
+   align-items: initial;
+}
+
+header{
+    background-color: rgba(241, 233, 246, 0.619);
+    color: darkblue;
+
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items:center;
+    font-size: 1.5rem;
+    text-align: center;
+   
+}
+
+header img{
+    width: 15%;
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    justify-content:space-around ;
+    font-size: 0.7rem; 
+}
+
+header nav ul li{
+    display: inline-block;  
+
+}
+
+header nav{
+    width: 50%;
+    position: relative;
+   justify-content: space-between;
+   
+}
+
+/* --------Portada--------*/
+
+#portada{
+    height: calc(100vh - 15vh);
+
+    background-image: url(../img/paint.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;}
+    img{
+        width: 100%;
+    }
+    
+
+
+#portada div{
+    color: rgb(249, 243, 243);
+    text-align: center;
+    background-color: rgba(68, 66, 68, 0.354);
+    padding: 15px;
+}
+
+/* ------- GALERIA ------ */
+
+#productos div{
+    padding: 20px;
+}
+
+#productos h2{
+    background-color: rgb(215, 184, 244);
+    padding: 20px;
+    text-align: center;
+}
+
+.card-producto {
+    border: solid 2px black;
+    width: 250px;
+    padding: 15px;}
+
+.card-producto h3{
+    text-align: center;
+}
+
+.card-producto a{
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 1px 2px;
+    background-color: rgb(240, 146, 146);
+    color: black;
+
+    border-radius: 10px;
+}
+
+.card-producto a:hover{
+    background-color: greenyellow;
+}
+
+.card-producto img{
+    width: 100%;
+}
+
+.paintings{ 
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* --------galeria ------- */
+
+
+#galeria h2{
+    background-color: rgb(233, 128, 140);
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.opciones nav ol li{
+
+    text-align: right;
+    justify-content: center;
+    
+}
+.opciones {
+    display: flex;
+}
+
+
+ /* ----------- sobre mi ------- */
+
+
+#seccion-about div{
+    
+    background-color: rgb(133, 246, 221);
+    padding: 25px;
+    text-align: center;
+    font-size: large;
+    
+}
+
+
+
+/* --------- contacto ----------- */
+
+#contactanos h2{
+    background-color: rgb(151, 195, 224);
+    padding: 20px;
+    text-align: center;
+    font-size: larger;
+}
+
+#contactanos p{
+    text-align: justify;
+    padding: auto;
+    align-items: baseline;
+    font-size: 1rem;
+}
+
+.banner img{
+    padding: 20px;
+    width: 100% ;
+    height: 25em;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.informacion{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.44rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 33.3%;
+    min-width: 10rem;
+    max-width: 30rem;
+    margin-right: 1rem;
+    text-align: justify;
+    box-sizing: border-box;
+    
+}
+
+p{
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    flex-direction:column;
+    display:inline-flex;
+    padding: 10px;
+    align-items:center;
+    }
+
+
+/*----------- GRIDS galeria -----------*/
+
+.grids-galeria{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10vh repeat(2, 30vh) 8vh;
+
+    grid-template-areas:  
+    "header header"
+    "canvas wood"
+    "acrylic panel"
+    "footer footer";
+}
+
+
+header{
+    grid-area: header;
+}
+
+.canvas{
+    grid-area: canvas;
+}
+
+.wood{
+    grid-area: wood;
+}
+
+.acrylic{
+    grid-area: acrylic;
+}
+
+.panel{
+    grid-area: panel;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/* ------ GRIDS NOSOTROS ------- */
+
+.grids-nosotros{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15vh repeat(2, 50vh) 10vh;
+
+    grid-template-areas:  
+    "header header"
+    "canvas wood"
+    "acrylic panel"
+    "footer footer";
+}
+
+.opciones{
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    padding: 10px;
+    align-items:center;
+}
+
+
+/*-------------- footer ---------- */
+
+footer img{
+    width: 15%;
+    display: flex;
+    display: inline;
+    }
+
+    headline {
+    align-items:center;
+    font-size: 1.5rem;
+    text-align: center;
+    }
+
+    #footer{
+        text-align: center;
+        color: blueviolet;
+        padding: 10px;
+    }
+
+
+
+    /* --------- social media ------- */
+
+    .media{
+        text-align: center;
+        color: blueviolet;
+        padding: 10px;
+    }
+    
+    .contenedor-redes i{
+        color: brown;
+        justify-content:center;
+        padding: 5px;
+        display: inline-flex;
+
+    }
+   
+   
+    
